@@ -166,7 +166,11 @@ const ContactNewEdit = ({ id, data, close }: ContactNewEditProps): ReactElement 
 	};
 
 	if (isLoadingCustomFields) {
-		return <FormSkeleton />;
+		return (
+			<div style={{ padding: "15px" }}>
+				<FormSkeleton />;
+			</div>
+		)
 	}
 
 	return (
